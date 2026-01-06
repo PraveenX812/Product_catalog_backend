@@ -29,6 +29,8 @@ async function bootstrap() {
     },
   );
 
+  applyToMicroserviceLayer(app);
+
   app.enableShutdownHooks();
   await app.listen();
 
